@@ -4,7 +4,7 @@ const taskList = document.getElementById("Task-list");
 function addTask() {
   const taskValue = inputBox.value;
   if (inputBox.value === "") {
-    alert("you must write something");
+    alert("Please add a task");
     return;
   } else {
     const task = document.createElement("div");

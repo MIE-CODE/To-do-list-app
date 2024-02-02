@@ -49,52 +49,23 @@ input {
   padding: 16px 50px;
   background: #ff5945;
   color: #fff;
+  font-weight: 600;
   font-size: 16px;
   cursor: pointer;
   border-radius: 40px;
+  transition: 0.4s;
 }
-ul li {
-  list-style: none;
-  font-size: 17px;
-  padding: 12px 8px 12px 50px;
-  user-select: none;
-  cursor: pointer;
-  position: relative;
+.row button:hover {
+  opacity: 0.8;
 }
-ul li::before {
-  content: "";
-  position: absolute;
-  height: 28px;
-  width: 28px;
-  border-radius: 50%;
-  background-image: url(images/notchecked.png);
-  background-size: cover;
-  background-position: center;
-
-  top: 11px;
-  left: 8px;
+.row button:active {
+  opacity: 0.6;
 }
-ul li.checked {
-  color: #555;
-  text-decoration: line-through;
-}
-ul li.checked::before {
-  background-image: url(images/checked.png);
-}
-ul li span {
-  position: absolute;
-  right: 0;
-  top: 5px;
-  width: 40px;
-  height: 40px;
-  font-size: 22px;
-  color: #555;
-  line-height: 40px;
-  text-align: center;
-  border-radius: 50%;
-}
-ul li span:hover {
-  background: #edeef0;
+.hero {
+  font-size: 15px;
+  color: #002765;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }
 #Task-list {
   display: flex;
@@ -127,10 +98,16 @@ ul li span:hover {
   font-weight: 900;
   background: #986d6d;
   color: #1c430a;
+  transition: 0.4s;
 }
 #Task-list .Edit:hover {
   background: #835858;
+  opacity: 0.8;
 }
+#Task-list .Edit:active {
+  opacity: 0.6;
+}
+
 #Task-list .Delete {
   padding: 5px 10px;
   border-radius: 10px;
@@ -139,9 +116,14 @@ ul li span:hover {
   font-weight: 900;
   background: #986d6d;
   color: crimson;
+  transition: 0.4s;
 }
 #Task-list .Delete:hover {
   background: #835858;
+  opacity: 0.8;
+}
+#Task-list .Delete:active {
+  opacity: 0.6;
 }
 #Task-list .buttons {
   display: flex;
